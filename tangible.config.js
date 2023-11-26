@@ -6,6 +6,12 @@ module.exports = {
       watch: './src/**',
       react: 'react'
     },
+    {
+      src: './src/index.js',
+      dest: './docs/build/discursed.min.js',
+      watch: './src/**',
+      react: 'react'
+    },
   ],
   serve: {
     dir: '.',
