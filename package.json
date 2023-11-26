@@ -1,0 +1,16 @@
+{
+  "name": "discursed",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "roll dev",
+    "build": "roll build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tangible/roller": "^1.2.1"
+  }
+}
+  
