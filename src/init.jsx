@@ -11,7 +11,8 @@ const open = (conversation, app, callback) => {
   root.render(<App 
     conversation={ conversation }
     app={ app }
-    close={ () => {
+    close={ e => {
+      e.stopPropagation()
       root.unmount()
       callback()
     }}
