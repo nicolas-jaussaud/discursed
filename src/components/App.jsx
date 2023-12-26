@@ -36,17 +36,15 @@ const App = ({
         <div ref={ content } style={ styles.textContainer }>
           { conversation.slice(0, lastMessage).map(
             (messages, currentMessage) => messages.content.map(
-              (text, paragraph) => 
-                {
-                  console.log(currentMessage, paragraph)
-                return (<Paragraph 
+              (text, paragraph) => (
+                <Paragraph 
                   key={ `${currentMessage}-${paragraph}` }
                   text={ text } 
                   name={ paragraph === 0 ? character.name : false }
                   color={ character.color ?? 'white' }
                   isActive={ (lastMessage - 1) === currentMessage }
-                />)
-              }
+                />
+              )
             )
           ) }
         </div>
